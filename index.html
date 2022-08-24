@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto&family=Signika+Negative:wght@600&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <h1 id="endResult">Let's play Tic-Tac-Toe!</h1>
+    <div id="playerArea">
+        <div id="playerNames">
+            <input type="text" id="playerOne" class="playerNameInput" placeholder="Player One" onfocus="this.value=''">
+            <input type="text" id="playerTwo" class="playerNameInput" placeholder="Player Two" onfocus="this.value=''">
+            <input type="button" id="submitButton" value="Submit" onclick="nameSubmission()">
+
+        </div>
+    </div>
+    <div id="resultedPlayerArea">
+        <div id="resultedPlayerNames">
+            <span class="playerNameText" id="playerOneName"></span>
+            <span class="playerNameText" id="playerTwoName"></span>
+
+
+        </div>
+    </div>
+
+    <div id="mainArea">
+        <div id="gameBoard">
+            <div class="gameTile" data-tile="0" data-row="0" data-column="0"></div>
+            <div class="gameTile" data-tile="1" data-row="0" data-column="1"></div>
+            <div class="gameTile" data-tile="2" data-row="0" data-column="2"></div>
+
+            <div class="gameTile" data-tile="3" data-row="1" data-column="0"></div>
+            <div class="gameTile" data-tile="4" data-row="1" data-column="1"></div>
+            <div class="gameTile" data-tile="5" data-row="1" data-column="2"></div>
+
+            <div class="gameTile" data-tile="6" data-row="2" data-column="0"></div>
+            <div class="gameTile" data-tile="7" data-row="2" data-column="1"></div>
+            <div class="gameTile" data-tile="8" data-row="2" data-column="2"></div>
+        </div>
+    </div>
+    <div id="gameSetting">
+        <button class="vsComputer">Vs Comupter</button>
+        <button class="twoPlayer">Two Player</button>
+        <button class="boardReset">Reset Board</button>
+    </div>
+</body>
+
+</html>
